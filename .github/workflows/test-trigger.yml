@@ -1,0 +1,16 @@
+name: Test Trigger
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Zeige Auslöse-Info
+        run: |
+          echo "Workflow wurde ausgelöst"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Zeitpunkt: $(date)"
