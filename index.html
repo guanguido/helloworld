@@ -36,11 +36,12 @@
       font-weight: bold;
       color: #333;
       min-height: 2.5rem;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <button onclick="document.getElementById('output').textContent = 'Hello World! We just changed it! Now deployed automatically to production!'">
+  <button onclick="document.getElementById('output').innerHTML = 'Hello World!<br>We just changed it!<br>Now deployed automatically to production!'">
     Klick mich!
   </button>
   <div id="output"></div>
